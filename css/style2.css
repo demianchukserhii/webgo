@@ -1,0 +1,198 @@
+a {
+    text-decoration: none;
+    color: rgb(71, 3, 71);
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    background: rgba(255, 0, 0, 0.589);
+    padding: 20px;
+    border-radius: 40%;
+}
+img {
+    opacity: 0.7;
+    box-sizing: border-box;
+    box-shadow: rgb(243, 210, 24);
+}
+
+
+li a {
+  background: none;
+  color: rgb(248, 222, 182);
+}
+li a:hover {
+  background: none;
+  color: rgb(255, 211, 146);
+}
+
+.skills-box {
+    background: none;
+    border: none;
+    height: 250px;
+    width: 300px;
+    margin: 10px 10px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.skills-box:hover {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.212);
+    border-radius: 20%;
+}
+.skills-box h1 {
+    font-size: 3rem;
+    color: rgb(201, 198, 198);
+}
+#skill-logo {
+    font-size: 20rem;
+    margin-bottom: 20px;
+    color: rgb(250, 255, 174);
+}
+#skill-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(175, 175, 175);
+    font-size: 3rem;
+    transition: all 1s;
+}
+
+
+form {
+  position: absolute;
+  padding: 30px;
+  filter: sepia(40%);
+}
+input[type="text"], input[type="email"], textarea {
+  height: 6rem;
+  width: 300px;
+  box-shadow: none;
+  box-sizing: border-box;
+  margin: 0;
+  background: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  border: none;
+
+}
+
+input[type="submit"],input[type="reset"] {
+  background: none;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: all 1s;
+}
+input[type="submit"]:hover {
+  background: none;
+  border: 1px solid whitesmoke;
+}
+input[type="reset"]:hover {
+  background: none;
+  border: 1px solid whitesmoke;
+}
+textarea {
+  height: 100px;
+  color: rgb(255, 255, 255);
+  box-shadow: none;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+input:focus, textarea:focus {
+  background: rgba(175, 175, 175, 0.411);
+  border: 1px solid blue;
+  color: black;
+}
+
+#findMe {
+  margin-top: 35px;
+  width: 400px;
+  text-transform: uppercase;
+  font-family: 'Cabin', sans-serif;
+}
+#findMe li {
+ margin-bottom: 20px;
+ color:rgb(167, 167, 167);
+ font-family: sans-serif;
+ padding-left: 15px;
+}
+#findMe li:first-child {
+  margin-top: 20px;
+}
+
+#findMe span {
+  float: right;
+  color: rgb(199, 199, 199);
+}
+
+
+.photobox{
+    display: inline-block;
+  }
+  
+  .photobox__previewbox{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photobox__preview{
+    display: block;
+    max-width: 100%;
+  }
+  
+  .photobox__previewbox:before{
+    content: "";
+  }
+.photobox_type .photobox__previewbox:before{
+    width: 100%;
+    height: 100%;
+    
+    background-color: var(--photoboxOverlay, rgba(177, 17, 192, 0.863));
+    opacity: 0;
+    transition: opacity var(--photoboxAnimationDuration, .4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+    will-change: opacity;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .photobox_type:hover .photobox__previewbox:before{
+    opacity: 1;
+  }
+  
+  .photobox_type .photobox__label{
+    width: 95%;
+    text-align: center;
+    
+    opacity: 0;  
+    transition: opacity calc(var(--photoboxAnimationDuration, .4s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), transform calc(var(--photoboxAnimationDuration, .4s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+    will-change: opacity, transform;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    z-index: 2;
+  }
+  
+  .photobox_type:hover .photobox__label{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition-duration: calc(var(--photoboxAnimationDuration, .4s) / 2);
+    transition-delay: calc(var(--photoboxAnimationDuration, .4s) / 2);
+  }
+  
+  .photobox_type .photobox__preview{
+      transition: transform var(--photoboxAnimationDuration, .4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+    will-change: transform;
+      transform: scale(1) rotate(0);
+  }
+  
+  .photobox_type:hover .photobox__preview{
+    transform: scale(1.2) rotate(5deg);
+  }
+  
